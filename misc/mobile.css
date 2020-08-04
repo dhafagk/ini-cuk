@@ -1,0 +1,125 @@
+@media screen and (max-width:1199px) and (min-width:992px){
+    .index-kiri p{font-size: 24px}
+    .index-kiri i{font-size: 34px}
+    .index-kiri a{padding: 10px}
+    .mama-uwu a{width: 202px}
+}
+@media screen and (max-width:991px) and (min-width:768px){
+    .box-anime{width: 145px}
+    .index-kiri p{font-size: 17px}
+    .index-kiri p span{line-height: 25px}
+    .index-kiri i{font-size:27px}
+    .index-kiri a{padding: 5px 20px;margin-top: -5px}
+    .index-kiri a::before{content:"LIHAT"}
+    .mama-uwu a{width: 200px}
+}
+@media screen and (max-width:1199px) and (min-width:992px){
+    .hidari img{height: auto;width: 190px}
+    .hako{width: 445px}
+    .migi p._desc{-webkit-line-clamp:4}
+}
+@media screen and (max-width: 991px){
+    .sgl_container{max-width: 95%}
+    .search-form{width: 100%}
+    .form-inline.advs{display: flex;justify-content: center}
+    .form-control.advanced{width: 70%}
+    .open{justify-content: center}
+    .terbuka{padding: 30px}
+    .col-12.waifu{flex-wrap: wrap;justify-content: space-around;flex-basis: auto;align-items: center;padding: 0}
+    #bungkus_waifu{width: 43%;margin: 0 0 30px}
+    .muncul_waifu{justify-content: center}
+    .hako{max-width: 100%}
+    .hidari img{height: auto;width:190px}
+}
+@media screen and (max-width: 767px){
+    .box-anime{width: 125px;margin: 30px 5px;}
+    .box-anime:first-child{margin-left: 15px;}
+    .box-anime:last-child{margin-right: 15px}
+    .box-anime .bawahnya p > span{font-size:12px!important;}
+    .box-anime .bawahnya p > span.ini-hot{display: block}
+    .box-anime .bawahnya p span.right.also{margin-top: 5px}
+    .index-kiri p{font-size: 20px}
+    .index-kiri i{font-size: 30px}
+    .index-kiri a{font-size: 12px;padding: 5px 10px}
+    #for_mobile > form{flex-grow: 1;flex-basis: auto}
+    #for_mobile > form > input{width: 100%}
+    .navbar-nav.setting{margin-left: 10px}
+    .dropdown-menu.dua{position: absolute}
+    .mama-uwu a{flex: 1 1 auto!important; -ms-flex: 1 1 auto!important}
+}
+@media screen and (max-width: 700px){
+    .sgl_container{max-width: 100%}
+    #apatu{flex-direction: column}
+    .col-12.sgl{display: block}
+    .col-8.sgl h1, .kotak-atas > .col-3{display: none}
+    .col-8.sgl,.col-3.for-img{max-width: 100%;flex: 0 0 100%;}
+    .col-3.for-img{display: flex;justify-content: center;flex-basis: auto}
+    .for-img img{width: calc(100% - 65%);margin-top: -30px}
+    p.hidden_title{display: block;font-size: 18px;font-weight: bold;text-align: center}
+    .hako{max-width: 95%}
+    
+}
+@media screen and (max-width: 678px){
+    #bungkus_waifu{width: 40%}
+    .uwe{font-size: 11px;}
+    .uwe span.ss{font-size: 18px}
+    .migi p._desc{-webkit-line-clamp:4}
+}
+@media screen and (max-width: 626px){
+    .index-kiri p{font-size: 18px}
+    .index-kiri i{font-size: 28px}
+    .index-kiri a{font-size: 12px;padding: 5px 15px}
+    .index-kiri a::before{content:"LIHAT"}
+    .index-kiri p span{line-height: 20px}
+}
+@media screen and (max-width: 565px){
+    .box-anime{width: 105px}
+    .index-kiri p{font-size: 14px}
+    .index-kiri i{font-size: 24px}
+    .box-anime .bawahnya p{margin: 5px 8px}
+    .uwe a{overflow: hidden;width: 150px;text-overflow: ellipsis;white-space: nowrap}
+    .hidari img{width: 170px;}
+    .migi p._desc{-webkit-line-clamp:3}
+    .migi p._tutle
+}
+@media screen and (max-width: 489px){
+    #bungkus_waifu{width: 100%}
+}
+@media screen and (max-width: 435px){
+    re.eps-kiri > span, re.eps-kanan > p{display: none}
+}
+@media screen and (max-width: 375px){
+    .index-kiri p{font-size: 13px}
+    .index-kiri i{font-size: 23px}
+    .box-anime{width: 95px}
+    .index-kiri a{font-size: 10px;padding: 5px 12px;margin-top: -5px}
+}
+@media screen and (min-width: 1085px){
+    main.sgl_container{max-width: 1045px;}
+}
+/*
+@media screen and (max-width: 767px){
+    .box-anime{width: 85px;margin: 30px 5px}
+    .box-anime:first-child{margin-left: 15px;}
+    .box-anime:last-child{margin-right: 15px}
+    .box-anime .bawahnya p > span{font-size:11px!important;}
+    .box-anime .bawahnya p span.right{margin-top: 5px}
+    .index-kiri p{font-size: 14px}
+    .index-kiri i{font-size: 24px}
+    .index-kiri p span{line-height: 20px}
+    .index-kiri a{font-size: 12px;padding: 5px 13px;margin-top: -5px}
+    .index-kiri a::before{content:"LIHAT"}
+    .bawahnya{padding: 0}
+    .box-anime .bawahnya p{font-size: 11px;margin: 5px}
+}
+*/
+
+/*
+@media only screen and (orientation: portrait){
+    .box-anime{width: 115px}
+    .index-kiri p{font-size: 18px}
+    .index-kiri i{font-size:28px}
+    .index-kiri p span{line-height: 20px}
+    .index-kiri a{padding: 5px 20px;}
+    .box-anime .bawahnya p span.right{margin-top: 0}
+}*/

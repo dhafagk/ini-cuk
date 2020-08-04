@@ -1,0 +1,30 @@
+@media screen and (min-width: 1200px){
+    .container{max-width: 1200px}
+}
+.col-2{
+    -ms-flex: 0 0 15.666667%;
+    flex: 0 0 15.666667%;
+    max-width: 15.666667%;
+}
+.col-10{
+    -ms-flex: 0 0 84.333333%;
+    flex: 0 0 84.333333%;
+    max-width: 84.333333%;
+}
+@media screen and (max-width: 767px){
+    .container{max-width: inherit}
+    .col-2{
+    -ms-flex: 0 0 20.666667%;
+    flex: 0 0 20.666667%;
+    max-width: 20.666667%;
+}
+.col-10{
+    -ms-flex: 0 0 79.333333%;
+    flex: 0 0 79.333333%;
+    max-width: 79.333333%;
+}
+}
+/*
+@media screen and (min-width: 992px){
+    .container{max-width: 1200px}
+}*/

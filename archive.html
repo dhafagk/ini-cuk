@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Kamisaha.net">
+    <meta name="generator" content="Jekyll v4.0.1">
+    <title>Kamisaha</title>
+    <link rel="icon" href="Image/Icon-3.svg">
+
+<!--    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">-->
+
+    <!-- Bootstrap core CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+ <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
+ <link href="fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.min.css" rel="stylesheet">
+    <link href="fontawesome/css/regular.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+    <link href="misc/edit-grid.css" rel="stylesheet">
+    <link href="misc/mobile.css" rel="stylesheet">
+  </head>
+  
+  <body>
+    <nav class="navbar navbar-light navbar-expand-md fixed-top box">
+    <div class="container" style="padding: 0">
+  <a class="logo" href="#"><img src="Image/Icon-5.png" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Anime</a>
+        <div class="dropdown-menu box" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Daftar Anime</a>
+          <a class="dropdown-item" href="#">Cari Anime</a>
+          <a class="dropdown-item" href="#">Sedang Tayang</a>
+          <a class="dropdown-item" href="#">Movie Anime</a>
+          <a class="dropdown-item" href="#">Random</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Jadwal Rilis</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Request</a>
+      </li>
+    </ul>
+    <div id="for_mobile">
+     <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Cari anime..." aria-label="Search">
+    </form>
+    <ul class="navbar-nav setting">
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></a>
+        <div class="dropdown-menu dua dropdown-menu-right box" aria-labelledby="dropdown02">
+          <a class="dropdown-item switch-asu">Dark Mode</a>
+          <div class="theme-switch">
+    <div class="switch"></div>
+  </div>
+        </div>
+      </li>
+    </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+<main role="main" class="container" id="main" style="margin-top: 10px">
+<div class="row box">
+<p class="breadcum"><a href="#">Home </a>/ Anime </p>
+</div>
+
+<div class="row box" style="margin-top: 20px">
+   <div class="col-12 head">
+       <h1>CARI</h1>
+       <hr>
+   </div>
+   <div class="col-12 inputnya">
+      <div class="search-form">
+       <form class="form-inline advs">
+      <input class="form-control advanced" type="text" placeholder="Cari anime..." aria-label="Search">
+      <div class="input-group-append">
+          <button class="btn btn-outline-secondary peradaban" type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+    <div class="open">
+        <a id="advs">Advanced Search</a>
+    </div>
+    <div class="terbuka" id="terbuka" style="display: none">
+        <div class="buka-select">
+        <div class="form-group select-buka-select">
+    <label for="exampleFormControlSelect1">Type:&nbsp;</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>Select Type</option>
+      <option>2</option>
+    </select>
+  </div>
+   <div class="form-group select-buka-select">
+    <label for="exampleFormControlSelec2">Status:&nbsp;</label>
+    <select class="form-control" id="exampleFormControlSelect2">
+      <option>Select Status</option>
+      <option>2</option>
+    </select>
+  </div>
+   <div class="form-group select-buka-select">
+    <label for="exampleFormControlSelect3">Studio:&nbsp;</label>
+    <select class="form-control" id="exampleFormControlSelect3">
+      <option>Select Studio</option>
+      <option>2</option>
+    </select>
+  </div>
+   <div class="form-group select-buka-select">
+    <label for="exampleFormControlSelect4">Tahun:&nbsp;</label>
+    <select class="form-control" id="exampleFormControlSelect4">
+      <option>Select Tahun</option>
+      <option>2</option>
+    </select>
+  </div>
+    </div>
+    <div class="buka-genre">
+        <p>Genre:</p>
+        <div class="custom-control custom-checkbox joss">
+  <input type="checkbox" class="custom-control-input" id="GenreCheck1">
+  <label class="custom-control-label" for="GenreCheck1">Action</label>
+</div>
+       <div class="custom-control custom-checkbox joss">
+  <input type="checkbox" class="custom-control-input" id="GenreCheck2">
+  <label class="custom-control-label" for="GenreCheck2">Comedy</label>
+</div>
+       <div class="custom-control custom-checkbox joss">
+  <input type="checkbox" class="custom-control-input" id="GenreCheck3">
+  <label class="custom-control-label" for="GenreCheck3">School</label>
+</div>
+       <div class="custom-control custom-checkbox joss">
+  <input type="checkbox" class="custom-control-input" id="GenreCheck4">
+  <label class="custom-control-label" for="GenreCheck4">Romance</label>
+</div>
+        
+    </div>
+    </div>
+    </div>
+   </div>
+    <div class="col-12">
+       <div class="uwe container d-flex">
+           <span class="ss">Daftar Anime</span>
+           <div class="sortby form-group d-flex">
+    <label for="exampleFormControlSelect1">Sort by:&nbsp;&nbsp;&nbsp;</label>
+    <select class="form-control" id="exampleFormControlSelect1">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+       </div>
+       <div class="container hrr">
+           <hr>
+       </div>
+        <div class="hako d-flex box">
+            <div class="hidari">
+                <img src="Image/104784.jpg" alt="">
+            </div>
+            <div class="migi">
+                <span class="_title">Re:Zero kara Hajimeru Isekai Seikatsu 2nd Season Part 1</span>
+                <p class="_meta"><a>TV</a><a>24 eps</a><a>A-1 Pictures</a></p>
+                <p class="_genre"><a href="">Action</a><a href="">Comedy</a><a href="">Romance</a><a href="">School</a><a href="">Slice of Life</a></p>
+                <p class="_desc">Houkago Teibo Nisshi menceritakan tentang 
+siswa tahun pertama Hina Tsurugi lebih suka 
+melakukan kegiatan di dalam ruangan seperti 
+kerajinan. Setelah baru-baru ini pindah ke kota 
+tepi laut, ia bertemu dengan seorang teman 
+sekolah yang lebih tua, Kuroiwa, yang 
+mengundangnya Setelah baru-baru ini pindah ke kota 
+tepi laut, ia bertemu dengan seorang teman 
+sekolah yang lebih tua, Kuroiwa, yang 
+mengundangnya</p>
+           <p class="_misc"    ><span style="color: #3B8CD1"><i class="fas fa-star"></i> 8.05</span><span><i class="fas fa-user"></i> 843,085</span></p>
+           <p id="sda"><i class="far fa-calendar"></i> Apr 11, 2020</p>
+            </div>
+        </div>
+        <div class="hako d-flex box">
+            <div class="hidari">
+                <img src="Image/104784.jpg" alt="">
+            </div>
+            <div class="migi">
+                <span class="_title">Gamers</span>
+                <p class="_meta"><a>TV</a><a>24 eps</a><a>A-1 Pictures</a></p>
+                <p class="_genre"><a href="">Action</a><a href="">Comedy</a><a href="">Romance</a><a href="">School</a><a href="">Slice of Life</a></p>
+                <p class="_desc">Houkago Teibo Nisshi menceritakan tentang 
+siswa tahun pertama Hina Tsurugi lebih suka 
+melakukan kegiatan di dalam ruangan seperti 
+kerajinan. Setelah baru-baru ini pindah ke kota 
+tepi laut, ia bertemu dengan seorang teman 
+sekolah yang lebih tua, Kuroiwa, yang 
+mengundangnya...</p>
+           <p class="_misc"><span style="color: #3B8CD1"><i class="fas fa-star"></i> 8.05</span><span><i class="fas fa-user"></i> 843,085</span></p>
+           <p id="sda"><i class="far fa-calendar"></i> Apr 11, 2020</p>
+            </div>
+        </div>
+        <div class="hako d-flex box">
+            <div class="hidari">
+                <img src="Image/104784.jpg" alt="">
+            </div>
+            <div class="migi">
+                <span class="_title">Gamers</span>
+                <p class="_meta"><a>TV</a><a>24 eps</a><a>A-1 Pictures</a></p>
+                <p class="_genre"><a href="">Action</a><a href="">Comedy</a><a href="">Romance</a><a href="">School</a><a href="">Slice of Life</a></p>
+                <p class="_desc">Houkago Teibo Nisshi menceritakan tentang 
+siswa tahun pertama Hina Tsurugi lebih suka 
+melakukan kegiatan di dalam ruangan seperti 
+kerajinan. Setelah baru-baru ini pindah ke kota 
+tepi laut, ia bertemu dengan seorang teman 
+sekolah yang lebih tua, Kuroiwa, yang 
+mengundangnya...</p>
+           <p class="_misc"><span style="color: #3B8CD1"><i class="fas fa-star"></i> 8.05</span><span><i class="fas fa-user"></i> 843,085</span></p>
+           <p id="sda"><i class="far fa-calendar"></i> Apr 11, 2020</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main><!-- /.container -->
+<footer class="text-muted box" style="margin-top: 40px">
+  <div class="container">
+    <div class="row">
+    <div class="col-4" style="margin-top:50px">
+    <img src="Image/logo.png" alt="">
+    <p style="margin-top: 5px">Kamisaha.net adalah tempat untuk menonton
+atau streaming anime subtitle Indonesia,
+ataupun download langsung per episode atau
+batch dengan bebas.</p>
+   </div>
+   <div class="col-4" style="margin-top:50px">
+    <p><i>Disclaimer : We do not own or make claim of
+these digital property or it's copyrights. It is
+purely fan-work solely intended as a medium to
+promote authors work to more wider global
+(international audience).
+All the trademark and Copyrights belongs to their
+respective party.</i></p>
+    </div>
+    <div class="col-4"><img src="Image/g-footer.jpg" alt="" width="70%" style="display: block;margin: 0 auto;opacity: .7"></div>
+  </div>
+  </div>
+</footer>
+<footer class="box" style="background: #495057;padding: 10px 0"><p style="text-align: center;color: #FAF5E4;margin: 0;font-size: 13px">© 2020 by Kamisaha.net, inc.</p></footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script>
+    $('.dropdown-menu.dua').click(function(e) {
+    e.stopPropagation();
+});
+    
+    jQuery(document).ready(function($) {
+        $(".theme-switch").click(function(){
+            $(".theme-switch").toggleClass("active");
+            $("body").toggleClass("dark-mode");
+            $.cookie("toggle", $(".theme-switch").hasClass('active'));
+            console.log($.cookie("toggle"));
+        });
+        if ($.cookie("toggle") == "true"){
+            $(".theme-switch").addClass("active");
+            $("body").addClass("dark-mode");
+        }
+    });
+    
+</script>
+</body>
+</html>

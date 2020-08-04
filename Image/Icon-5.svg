@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <filter id="k" x="-19.5" y="1.5" width="76" height="52" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="s" x="3" y="1" width="76" height="55" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Icon-5">
+      <rect width="50" height="50"/>
+    </clipPath>
+  </defs>
+  <g id="Icon-5" clip-path="url(#clip-Icon-5)">
+    <g id="Group_107" data-name="Group 107" transform="translate(-9 -13)">
+      <g transform="matrix(1, 0, 0, 1, 9, 13)" filter="url(#k)">
+        <text id="k-2" data-name="k" transform="translate(2.5 10.5) rotate(90)" fill="#f9f8f8" stroke="#0d1440" stroke-width="3" font-size="49" font-family="Tondo"><tspan x="0" y="0">k</tspan></text>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 9, 13)" filter="url(#s)">
+        <text id="s-2" data-name="s" transform="translate(25 10) rotate(90)" fill="#f9f8f8" stroke="#bf1736" stroke-linejoin="round" stroke-width="3" font-size="49" font-family="Tondo"><tspan x="0" y="0">s</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

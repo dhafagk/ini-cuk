@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-Icon_2">
+      <rect width="48" height="48"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_2" data-name="Icon – 2" clip-path="url(#clip-Icon_2)">
+    <rect width="48" height="48" fill="#0d1440"/>
+    <g id="Group_107" data-name="Group 107" transform="translate(-9 -15)">
+      <text id="k" transform="translate(11.5 23.5) rotate(90)" fill="#bf1736" stroke="#0d1440" stroke-width="2" font-size="50" font-family="Tondo"><tspan x="0" y="0">k</tspan></text>
+      <text id="s" transform="translate(32 23) rotate(90)" fill="#bf1736" stroke="#0d1440" stroke-width="2" font-size="50" font-family="Tondo"><tspan x="0" y="0">s</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -33,27 +33,40 @@ $(document).ready(function(){
 
 /*=== Logika Iframe ====*/
 $(document).ready(function(){
-    /*DataBase*/
+    /*=======
+    DataBase
+    ========*/
     var database = [
         "https://www.youtube.com/embed/joV58f4IIV0", 
         "https://www.youtube.com/embed/9XOY8bHkcYM", 
         "https://www.youtube.com/embed/vbdTNtoMpn0"];
     /*Mari Buat Wadah Default*/
     var iframeID = '';
-    /*KONDISI SAAT DI CLICK*/
+    
+    /*=======
+    FungsiLoad
+    ========*/
+    window.onload = function () {
+        var hash = window.location.hash;
+        var numb = hash.match(/\d/g);
+        numb = numb.join("");
+        iframeID = numb;
+        $("iframe.target[data-id=" + iframeID + "]").prop("src", database[iframeID] + "?autoplay=0");
+    };
+    /*=======
+    KONDISI SAAT DI CLICK
+    ========*/
     $('a.targetClick').click(function() {
         /*Mengambil attribute dari A*/
         iframeID = $(this).attr('data-id');
-        iframeID = $(this).attr('data-id');
-        
         /*Change Attribute Iframe*/
         $('iframe.target').hide();
         $('iframe.target[data-id='+iframeID+']').show();
         
         $('iframe.target').prop('src', "Null");
-        $('iframe.target[data-id='+iframeID+']').prop('src', database[iframeID]+'?autoplay=1');
-        
-    });/*a.targetClick*/
+        $('iframe.target[data-id='+iframeID+']').prop('src', database[iframeID]+'?autoplay=0');
+    });
+    
 });
 
 

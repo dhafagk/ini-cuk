@@ -49,6 +49,8 @@ $(document).ready(function(){
     ];
     /*Mari Buat Wadah Default*/
     var iframeID,epsID;
+    /*=== First Chip add Active ===*/
+    $("div[data-mirror] span:first-child").addClass("active");
     /*=======
     FungsiLoad
     ========*/

@@ -96,6 +96,7 @@ $(document).ready(function(){
             kunciIng = 'locked';
         };
         /*=== Mengambil attribute dari Tab yang punya Class Active ===*/
+        $("[data-mirror="+iframeID+"] .mirror.active").addClass("active");
         epsID = $("[data-mirror="+iframeID+"] .mirror.active").attr('mirror-id');
         let xrayLoad = epsID - 1;
         /*=== Check Aja === */

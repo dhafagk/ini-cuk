@@ -69,12 +69,14 @@ $(document).ready(function(){
         $("[data-mirror="+iframeID+"] .mirror").click(function(){
             $("[data-mirror="+iframeID+"] .mirror").removeClass("active");
             $(this).addClass("active");
-            epsID = iframeID;
+            epsID = $(this).attr('mirror-id');;
             let xrayHasil = epsID - 1;
             $('.CheckEpsID').html(epsID);
+            $('.CheckIframeIDD').html(iframeID);
             /*=== Change Attribute Iframe ===*/
             $('iframe.target[data-id='+iframeID+']').prop('src', eval("episode"+iframeID)[xrayHasil]+'?autoplay=0');
         });
+        
     };
     /*=======
     KONDISI SAAT DI CLICK

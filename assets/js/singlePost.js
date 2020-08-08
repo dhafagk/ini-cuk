@@ -49,8 +49,7 @@ $(document).ready(function(){
     ];
     /*Mari Buat Wadah Default*/
     var iframeID,epsID;
-    /*=== First Chip add Active ===*/
-    $("div[data-mirror] span:first-child").addClass("active");
+    var kunciIng = 'open';
     /*=======
     FungsiLoad
     ========*/
@@ -65,6 +64,11 @@ $(document).ready(function(){
         /*=== Check Aja === */
         $('.CheckEpsID').html(epsID);
         $('.CheckIframeIDD').html(iframeID);
+        /*=== First Chip add Active ===*/
+        if(kunciIng == "open"){
+            $("div[data-mirror] span:first-child").addClass("active");
+            kunciIng = 'locked';
+        };
         /*=== Rubah src saat pertama kali load berdasarkan hastag link ===*/
         $('iframe.target[data-id='+iframeID+']').prop('src', eval("episode"+iframeID)[epsID]+'?autoplay=0');
         /*==== Mirror Tabs ====*/
@@ -92,6 +96,11 @@ $(document).ready(function(){
         /*=== Check Aja === */
         $('.CheckEpsID').html(epsID);
         $('.CheckIframeIDD').html(iframeID);
+        /*=== First Chip add Active ===*/
+        if(kunciIng == "open"){
+            $("div[data-mirror] span:first-child").addClass("active");
+            kunciIng = 'locked';
+        };
         /*=== Rubah src menggunakan iframeID terbaru dan epsID lama dari mirror yang punya class Active ===*/
         $('iframe.target').hide();
         $('iframe.target[data-id='+iframeID+']').show();

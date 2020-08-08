@@ -90,17 +90,17 @@ $(document).ready(function(){
     $('a.targetClick').click(function() {
         /*=== Mengambil attribute dari A ===*/
         iframeID = $(this).attr('data-id');
+        /*=== First Chip add Active ===*/
+        if(kunciIng == "open"){
+            $("div[data-mirror] span:first-child").addClass("active");
+            kunciIng = 'locked';
+        };
         /*=== Mengambil attribute dari Tab yang punya Class Active ===*/
         epsID = $("[data-mirror="+iframeID+"] .mirror.active").attr('mirror-id');
         let xrayLoad = epsID - 1;
         /*=== Check Aja === */
         $('.CheckEpsID').html(epsID);
         $('.CheckIframeIDD').html(iframeID);
-        /*=== First Chip add Active ===*/
-        if(kunciIng == "open"){
-            $("div[data-mirror] span:first-child").addClass("active");
-            kunciIng = 'locked';
-        };
         /*=== Rubah src menggunakan iframeID terbaru dan epsID lama dari mirror yang punya class Active ===*/
         $('iframe.target').hide();
         $('iframe.target[data-id='+iframeID+']').show();

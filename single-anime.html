@@ -53,6 +53,18 @@
             <form class="form-inline my-2 my-lg-0" style="margin-left: 30px;">
                 <input class="form-control mr-sm-2" type="text" placeholder="Cari anime..." aria-label="Search" />
             </form>
+            <ul class="navbar-nav setting">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i></a>
+                    <div class="dropdown-menu dua dropdown-menu-right box" aria-labelledby="dropdown02">
+                        <a class="dropdown-item switch-asu">Dark Mode</a>
+                        <div class="theme-switch">
+                            <div class="switch"></div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
         </div>
     </div>
 </nav>
@@ -104,124 +116,163 @@
         <div class="episode">
         <!-- NANTI PAKE FLEX-WRAP : REVERSE-WRAP DHAF MANTAP -->
 <div class="accordion panel-group" id="accordion">
+    <!-- * LOOPING = data-filter-item data-filter-name -->
     <div class="panel" data-filter-item data-filter-name="01">
-            <div class="panel-heading" id="headingOne">
-                 <a data-id="0" class="collapsed eps targetClick" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse">
-                    <re class="eps-kiri"><span>Re:Zero Season 2 - Opening Extended『Realize』by Konomi Suzuki <span class="badge badge-secondary _bangke">SD</span>
-                    <span class="badge badge-secondary _bangke">720P</span>
-                    <span class="badge badge-secondary _bangke">1080P</span></span><p>Episode 01</p></re>
+            <div class="panel-heading">
+                 <!-- * LOOPING = data-id Dan href -->
+                 <a data-id="1" class="collapsed eps targetClick" data-toggle="collapse" href="#episode1" role="button" aria-expanded="false" aria-controls="collapse">
+                     <re class="eps-kiri">Re:Zero iframeID=<span class="CheckIframeIDD"></span> | epsID=<span class="CheckEpsID"></span>
+                        <span class="badge badge-secondary _bangke">SD</span>
+                        <span class="badge badge-secondary _bangke">720P</span>
+                        <span class="badge badge-secondary _bangke">1080P</span>
+                        <p>Episode </p>
+                    </re>
                     <re class="eps-kanan"><span>Hari ini</span><p>Kamisaha</p></re>
                  </a>
             </div><!--/.panel-heading-->
-            <div id="collapse1" class="panel-collapse collapse" data-parent="#accordion">
+            <!-- * LOOPING = id -->
+            <div id="episode1" class="panel-collapse collapse" data-parent="#accordion">
                 <div class="panel-body">
                     <div class="tempat-vidio">
-                        <div class="tempat-vidio-judul d-flex">
-                            <span class="mirror active" id="mirror">KamiDrive</span>
-                            <span class ="mirror" id="mirror">Gdrive</span>
-                            <span class ="mirror" id="mirror">mp4upload</span>
+                         <!-- * data-mirror = id -->
+                        <div data-mirror="1" class="tempat-vidio-judul d-flex">
+                            <span mirror-id="1" class="mirror active">KamiDrive</span>
+                            <span mirror-id="2" class ="mirror">Gdrive</span>
+                            <span mirror-id="3" class ="mirror">mp4upload</span>
                             <span class='lightSwitcher' id='checkbox'>
-  <a href='javascript:void(0);' type='checkbox'><i class="fas fa-lightbulb"></i></a>
-<label data-off='OFF' data-on='ON'></label>
-</span>
+                                <a href='javascript:void(0);' type='checkbox'><i class="fas fa-lightbulb"></i></a><label data-off='OFF' data-on='ON'></label>
+                            </span>
                         </div><!--/.tempatdownoadjudul-->
                         <div class="tempat-vidio-konten">
-                            <iframe data-id="0" class="target" src="" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                            <!-- * LOOPING = data-id -->
+                            <iframe data-id="1" class="target" src="" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
                         <div class="notice-vid"><span>Jika video saat diputar muncul gambar <b>Mitsuha</b>, coba refresh halaman / gunakan server lain.</span></div>
                         </div><!--/.tempat-vidio-konten-->
                     </div><!--/.tempat vidio-->
                     <div id="bawah-dl" style="padding:15px 0px 5px 0px;" class="">
                         <table class="table table-bordered table-hover">
-                          <thead>
-                            <tr>
-                              <th scope="col">Download</th>
-                              <th scope="col">Kualitas</th>
-                              <th scope="col">Ukuran</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>Drive (Direct), Drive (Login), Zippyshare, Racaty, Solidfile, Mirror</td>
-                              <td><span class="badge badge-secondary _bangke dls">720P</span></td>
-                              <td>202 MB</td>
-                            </tr>
-                            <tr>
-                              <td>Drive (Direct), Drive (Login), Zippyshare, Racaty, Solidfile, Mirror</td>
-                              <td><span class="badge badge-secondary _bangke dls">360P</span></td>
-                              <td>202 MB</td>
-                            </tr>
-                          </tbody>
+                            <thead>
+                                <tr><th scope="col">Download</th><th scope="col">Kualitas</th><th scope="col">Ukuran</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="" class="dL">Drive (Direct)</a>,
+                                        <a href="" class="dL">Drive (Login)</a>,
+                                        <a href="" class="dL">Zippyshare</a>,
+                                        <a href="" class="dL">Racaty</a>,
+                                        <a href="" class="dL">Solidfile</a>,
+                                        <a href="" class="dL">Mirror</a>,
+                                    </td>
+                                    <td><span class="badge badge-secondary _bangke dls">720P</span></td>
+                                    <td>202 MB</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div><!-- /bawah dl -->
                 </div><!--/panel Body-->
             </div>
     </div><!--/.panel-->
     <div class="panel" data-filter-item data-filter-name="02">
-            <div class="panel-heading" id="headingOne">
-                <a data-id="1" class="collapsed eps targetClick" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse">
-                    <re class="eps-kiri"><span>Re:Zero Season 2 - Opening Extended『Realize』by Konomi Suzuki</span><p>Episode 02</p></re>
+            <div class="panel-heading">
+                 <a data-id="2" class="collapsed eps targetClick" data-toggle="collapse" href="#episode2" role="button" aria-expanded="false" aria-controls="collapse">
+                    <re class="eps-kiri">Re:Zero iframeID=<span class="CheckIframeIDD"></span> | epsID=<span class="CheckEpsID"></span>
+                        <span class="badge badge-secondary _bangke">SD</span>
+                        <span class="badge badge-secondary _bangke">720P</span>
+                        <span class="badge badge-secondary _bangke">1080P</span>
+                        <p>Episode 03</p>
+                    </re>
                     <re class="eps-kanan"><span>Hari ini</span><p>Kamisaha</p></re>
-                </a>
+                 </a>
             </div><!--/.panel-heading-->
-            <div id="collapse2" class="panel-collapse collapse" data-parent="#accordion">
+            <div id="episode2" class="panel-collapse collapse" data-parent="#accordion">
                 <div class="panel-body">
                     <div class="tempat-vidio">
-                        <div class="tempat-vidio-judul">
-                            Episode 02
+                        <div data-mirror="2" class="tempat-vidio-judul d-flex">
+                            <span mirror-id="1" class="mirror active">KamiDrive</span>
+                            <span mirror-id="2" class ="mirror">Gdrive</span>
+                            <span mirror-id="3" class ="mirror">mp4upload</span>
+                            <span class='lightSwitcher' id='checkbox'>
+                                <a href='javascript:void(0);' type='checkbox'><i class="fas fa-lightbulb"></i></a><label data-off='OFF' data-on='ON'></label>
+                            </span>
                         </div><!--/.tempatdownoadjudul-->
                         <div class="tempat-vidio-konten">
-                            <iframe data-id="1" class="target" src="" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                            <iframe data-id="2" class="target" src="" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                        <div class="notice-vid"><span>Jika video saat diputar muncul gambar <b>Mitsuha</b>, coba refresh halaman / gunakan server lain.</span></div>
                         </div><!--/.tempat-vidio-konten-->
                     </div><!--/.tempat vidio-->
-                    <div id="bawah-dl" style="padding:8px 0px 8px 0px;" class="">
-                        <div class="tempat-download">
-                            <div class="tempat-download-judul">
-                                Episode 02
-                            </div><!--/.tempatdownoadjudul-->
-                            <div class="tempat-download-list">
-                                <ul>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Google Sharer</a></li>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Mirror Creator</a></li>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Mediafire</a></li>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Zippyshare</a></li>
-                                </ul>
-                            </div><!--/.tempat-download-list-->
-                        </div><!--/.tempat-download-->
+                    <div id="bawah-dl" style="padding:15px 0px 5px 0px;" class="">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr><th scope="col">Download</th><th scope="col">Kualitas</th><th scope="col">Ukuran</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="" class="dL">Drive (Direct)</a>,
+                                        <a href="" class="dL">Drive (Login)</a>,
+                                        <a href="" class="dL">Zippyshare</a>,
+                                        <a href="" class="dL">Racaty</a>,
+                                        <a href="" class="dL">Solidfile</a>,
+                                        <a href="" class="dL">Mirror</a>,
+                                    </td>
+                                    <td><span class="badge badge-secondary _bangke dls">720P</span></td>
+                                    <td>202 MB</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div><!-- /bawah dl -->
                 </div><!--/panel Body-->
             </div>
     </div><!--/.panel-->
     <div class="panel" data-filter-item data-filter-name="03">
-            <div class="panel-heading" id="headingOne">
-                <a href="#collapse3" aria-controls="collapse2" data-id="2" class="eps targetClick" data-toggle="collapse">
-                    <re class="eps-kiri"><span>Re:Zero Season 2 - Opening Extended『Realize』by Konomi Suzuki</span><p>Episode 03</p></re>
+            <div class="panel-heading">
+                 <a data-id="3" class="collapsed eps targetClick" data-toggle="collapse" href="#episode3" role="button" aria-expanded="false" aria-controls="collapse">
+                    <re class="eps-kiri">Re:Zero iframeID=<span class="CheckIframeIDD"></span> | epsID=<span class="CheckEpsID"></span>
+                        <span class="badge badge-secondary _bangke">SD</span>
+                        <span class="badge badge-secondary _bangke">720P</span>
+                        <span class="badge badge-secondary _bangke">1080P</span>
+                        <p>Episode 03</p>
+                    </re>
                     <re class="eps-kanan"><span>Hari ini</span><p>Kamisaha</p></re>
-                </a>
+                 </a>
             </div><!--/.panel-heading-->
-            <div id="collapse3" class="panel-collapse collapse" data-parent="#accordion">
+            <div id="episode3" class="panel-collapse collapse" data-parent="#accordion">
                 <div class="panel-body">
                     <div class="tempat-vidio">
-                        <div class="tempat-vidio-judul">
-                            Episode 03
+                        <div data-mirror="3" class="tempat-vidio-judul d-flex">
+                            <span mirror-id="1" class="mirror active">KamiDrive</span>
+                            <span mirror-id="2" class ="mirror">Gdrive</span>
+                            <span mirror-id="3" class ="mirror">mp4upload</span>
+                            <span class='lightSwitcher' id='checkbox'>
+                                <a href='javascript:void(0);' type='checkbox'><i class="fas fa-lightbulb"></i></a><label data-off='OFF' data-on='ON'></label>
+                            </span>
                         </div><!--/.tempatdownoadjudul-->
                         <div class="tempat-vidio-konten">
-                            <iframe data-id="2" class="target" src="" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                            <iframe data-id="3" class="target" src="" frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+                        <div class="notice-vid"><span>Jika video saat diputar muncul gambar <b>Mitsuha</b>, coba refresh halaman / gunakan server lain.</span></div>
                         </div><!--/.tempat-vidio-konten-->
                     </div><!--/.tempat vidio-->
-                    <div id="bawah-dl" style="padding:8px 0px 8px 0px;" class="">
-                        <div class="tempat-download">
-                            <div class="tempat-download-judul">
-                                Episode 03
-                            </div><!--/.tempatdownoadjudul-->
-                            <div class="tempat-download-list">
-                                <ul>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Google Sharer</a></li>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Mirror Creator</a></li>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Mediafire</a></li>
-                                    <li><a href="" title="Download-DaloadCenter" target="_blank">Zippyshare</a></li>
-                                </ul>
-                            </div><!--/.tempat-download-list-->
-                        </div><!--/.tempat-download-->
+                    <div id="bawah-dl" style="padding:15px 0px 5px 0px;" class="">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr><th scope="col">Download</th><th scope="col">Kualitas</th><th scope="col">Ukuran</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <a href="" class="dL">Drive (Direct)</a>,
+                                        <a href="" class="dL">Drive (Login)</a>,
+                                        <a href="" class="dL">Zippyshare</a>,
+                                        <a href="" class="dL">Racaty</a>,
+                                        <a href="" class="dL">Solidfile</a>,
+                                        <a href="" class="dL">Mirror</a>,
+                                    </td>
+                                    <td><span class="badge badge-secondary _bangke dls">720P</span></td>
+                                    <td>202 MB</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div><!-- /bawah dl -->
                 </div><!--/panel Body-->
             </div>

@@ -11,11 +11,33 @@ Tags: Anime, Stream, Fansubs, Kamisaha
 html{scroll-behavior: smooth}
 body {
   padding-top: 5rem;
-    font-family: "Open Sans";background: #F2F2F2;
+/*    font-family: "Open Sans";*/
+    background: #F2F2F2;
     letter-spacing: .1px;
 }
 @font-face{font-family:cocon;src:url(font/Cocon-RegularTR.ttf)}
+/*======================
+DARKMODE DAN NORMAL MODE
+=========================*/
+body.dark-mode {background: #131313;color: #ffffff;}
+
 .box{box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.161);background: #fff;border-radius: 5px}
+body.dark-mode .box{box-shadow: 0px 3px 6px rgba(225, 225, 225 225.161);background: #262626;border-radius: 5px}
+
+:root body{--myblack:#b3b3b3;--kuning:#F8B400}
+:root body.dark-mode{--myblack:#aaaaaa;}
+
+body.dark-mode .text-muted {color: #aaaaaa!important;}
+body.dark-mode re.eps-kiri > p, body.dark-mode re.eps-kanan > p { color: #999999; }
+
+body.dark-mode a.nav-link {color: #aaaaaa!important}
+body.dark-mode a.switch-asu{color: #fff;}
+body.dark-mode .breadcum{color: #b3b3b3;}
+body.dark-mode table {color: #b3b3b3;}
+body.dark-mode p.misc {color: #b3b3b3;}
+body.dark-mode p.votes {color: rgba(179, 179, 179,.8);}
+body.dark-mode p.share {color: rgba(179, 179, 179,.8);}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
@@ -32,7 +54,6 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
 }
-:root{--myblack:#3E464B;--kuning:#F8B400}
 a{color: var(--myblack);text-decoration: none !important;}
 a:hover{color: #BF1736}
 .right{float: right}
@@ -115,7 +136,9 @@ span.box-rating{background: #F8B400;padding: 10px;color: #fff;font-size: 12px;fo
 #accordion > .panel{border-bottom: 1px solid rgba(62,75,70,.5)}
 #accordion > .panel > .panel-heading{padding: 10px 2px;transition: 0.5s all ease;}
 #accordion > .panel > .panel-heading:hover{background: rgba(248,180,0,.2)}
-#accordion > .panel > .panel-heading:hover .badge._bangke{background: rgba(93,104,111,.4)}
+#accordion > .panel > .panel-heading .badge._bangke{background: rgba(93,104,111,.4);color: #6E6D6C;}
+body.dark-mode #accordion > .panel > .panel-heading .badge._bangke{color: #AAAAAA;}
+#accordion > .panel > .panel-heading:hover .badge._bangke{color: #fff !important;}
 a.eps{display: flex;flex-basis: auto;color: var(--myblack);font-size: 14px;font-weight: 500;}
 a.eps:hover{text-decoration: none}
 re{flex-direction: row;vertical-align: middle}
@@ -123,7 +146,7 @@ re.eps-kanan{margin-left: auto;text-align: right}
 re.eps-kiri > span{}
 re.eps-kiri > p,re.eps-kanan > p{color: rgba(93,104,111,.8);margin-bottom: 0px}
 re.eps-kanan > span{color: #2A9D8F}
-.badge._bangke{background: rgba(93,104,111,.3);font-size: 11px;color: #fff;font-weight: normal;margin: 0 1px;border-radius: 0;}
+.badge._bangke{background: rgba(93,104,111,.3);font-size: 11px;color: #fff;font-weight: normal;margin: 0 1px;border-radius: 0;padding: 5px;font-weight: 600;}
 /*SWITCH*/
 a.switch-asu{font-size: 14px;padding: 5px 10px 5px 13px;width: auto}
 a:not([href]):hover{background: transparent!important}
@@ -147,6 +170,7 @@ a:not([href]):hover{background: transparent!important}
     transition: 0.5s all ease;
   }
 body.dark-mode .switch{transform: translateX(25px);}
+
 #for_mobile{display: flex}
 /*TAXONOMY SEASON*/
 .flexing{display: flex;width: 100%;justify-content: center;padding: 30px}
@@ -282,9 +306,10 @@ p#sda{right: 0}
 
 /* ===== BOX DOWNLOAD ========= */
 .table-bordered{font-size: 14px}
-.table-bordered td, .table-bordered th, .table-bordered thead td, .table-bordered thead th{text-align: center}
+.table-bordered td, .table-bordered th, .table-bordered thead td, .table-bordered thead th{text-align: center;font-weight: 600;}
 .badge.dls{background: rgba(93,104,111,.8)}
-.table-hover tbody tr:hover{background: rgb(0 0 0 / 0.03)}
+.table-hover tbody tr:hover{background: rgb(0 0 0 / 0.03);}
+body.dark-mode .table-hover tbody tr:hover{color: #aaaaaa;}
 /*=== PAGE MV ==== */
 .tempat-vidio-judul{background: #495057;color: #E1E1E1;font-size: 13px}
 .tempat-vidio-judul span{padding: 10px 10px 10px 15px;}

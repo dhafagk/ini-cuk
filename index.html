@@ -288,26 +288,8 @@ respective party.</i></p>
 </footer>
 <footer class="box" style="background: #495057;padding: 10px 0"><p style="text-align: center;color: #FAF5E4;margin: 0;font-size: 13px">© 2020 by Kamisaha.net, inc.</p></footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>-->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-<script>
-    $('.dropdown-menu.dua').click(function(e) {
-    e.stopPropagation();
-});
-    
-    jQuery(document).ready(function($) {
-        $(".theme-switch").click(function(){
-            $(".theme-switch").toggleClass("active");
-            $("body").toggleClass("dark-mode");
-            $.cookie("toggle", $(".theme-switch").hasClass('active'));
-            console.log($.cookie("toggle"));
-        });
-        if ($.cookie("toggle") == "true"){
-            $(".theme-switch").addClass("active");
-            $("body").addClass("dark-mode");
-        }
-    });
-    
-</script>
+<script src="assets/js/singlePost.js"></script>
 </body>
 </html>

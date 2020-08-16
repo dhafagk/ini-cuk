@@ -74,76 +74,81 @@
 <main role="main" class="container" id="main" style="margin-top: 10px">
 
 <div class="row box">
-   <div class="col-12 head">
-       <h1>CARI</h1>
-       <hr>
-   </div>
-   <div class="col-12 inputnya">
-       <form class="form-inline advs" method="get" id="advanced-search" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-        <input type="hidden" name="search" value="advanced">
-      <div class="tempat-ngetik-plus-open">
-        <input class="form-control advanced" type="text" placeholder="Cari anime..." aria-label="Search" id="s" name="s" value="<?php echo get_search_query() ?>">
-      <div class="input-group-append">
-          <button class="btn btn-outline-secondary peradaban" type="submit" id="searchSubmit"><i class="fas fa-search"></i></button>
-      </div>
-      <div class="open">
-        <a id="advs">Advanced Search</a>
-    </div>
-      </div>
-    <div class="terbuka" id="terbuka" style="display: none">
-        <div class="buka-select">
-        <div class="form-group select-buka-select">
-    <label for="type">Type:&nbsp;</label>
-    <select class="form-control" id="type" name="ks_type">
-      <option value="">Pilih Type</option>
-      <option value="TV" <?php selected($_GET['ks_type'],'TV'); ?>>TV</option>
-      <option value="OVA" <?php selected($_GET['ks_type'],'OVA'); ?>>OVA</option>
-      <option value="Special" <?php selected($_GET['ks_type'],'Special'); ?>>Special</option>
-      <option value="Movie" <?php selected($_GET['ks_type'],'Movie'); ?>>Movie</option>
-      <option value="ONA" <?php selected($_GET['ks_type'],'ONA'); ?>>ONA</option>
-    </select>
-  </div>
-   <div class="form-group select-buka-select">
-    <label for="status">Status:&nbsp;</label>
-    <select class="form-control" id="status" name="ks_status">
-      <option value="">Pilih Status</option>
-      <option value="Finished Airing" <?php selected($_GET['ks_status'], 'Finished Airing'); ?>>Completed</option>
-      <option value="Currently Airing" <?php selected($_GET['ks_status'], 'Completed Airing'); ?>>Ongoing</option>
-    </select>
-  </div>
-  <div class="form-group select-buka-select">
-    <label for="studio">Studio:&nbsp;</label>
-    <select class="form-control" id="studio" name="studio">
-      <option value="">Pilih Studio</option>
-      <?php $studio = get_terms(array('taxonomy' => 'studio')); foreach($studio as $d){ ?>
-      <option value="<?php echo $d->slug; ?>" <?php selected($_GET['studio'], $d->slug); ?>><?php echo $d->name; ?></option>
-    <?php } ?>
-    </select>
-  </div>
-   <div class="form-group select-buka-select">
-    <label for="tahun">Tahun:&nbsp;</label>
-    <select class="form-control" id="tahun" name="ks_tahun">
-      <option value="">Pilih Tahun</option>
-      <?php $tahun_paling_awal = 1950; foreach(range(date('Y'),$tahun_paling_awal) as $x){ ?>
-      <option value="<?php echo $x; ?>" <?php selected($_GET['ks_tahun'], $x); ?>><?php echo $x; ?></option>
-    <?php } ?>
-    </select>
-  </div>
-    </div>
-    <div class="buka-genre">
-        <p>Genre:</p>
-        <input type="hidden" name="genre">
-        <?php $gen = explode(",", $_GET['genre']); ?>
-        <?php $genres = get_terms(array('taxonomy' => 'genre')); $i = 1; foreach($genres as $data){ ?>
-        <div class="custom-control custom-checkbox joss">
-  <input type="checkbox" class="custom-control-input" id="check<?php echo $i; ?>" value="<?php echo $data->name; ?>" <?php checked(in_array($data->name, $gen)); ?>>
-  <label class="custom-control-label" for="check<?php echo $i; ?>"><?php echo $data->name; ?></label>
-</div>
-<?php $i++; } ?>
-        
-    </div>    </div>
-    </form>
-   </div>
+<!-- === CODE: DARI SINI === -->
+<div class="col-12 head"><h1>CARI</h1><hr></div>
+<div class="col-12 inputnya">
+    <div class="input-wadah">
+        <form class="form-inline advs" method="get" id="advanced-search" role="search" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+            <input type="hidden" name="search" value="advanced">
+            <div class="tempat-ngetik-plus-open">
+                <input class="form-control advanced" type="text" placeholder="Cari anime..." aria-label="Search" id="s" name="s" value="<?php echo get_search_query() ?>">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary peradaban" type="submit" id="searchSubmit"><i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="open"> <a id="advs">Advanced Search</a>
+                </div>
+            </div>
+            <div class="terbuka" id="terbuka">
+                <div class="buka-select">
+                    <div class="form-group select-buka-select">
+                        <label for="type">Type:&nbsp;</label>
+                        <select class="form-control" id="type" name="ks_type">
+                            <option value="">Pilih Type</option>
+                            <option value="TV" <?php selected($_GET[ 'ks_type'], 'TV'); ?>>TV</option>
+                            <option value="OVA" <?php selected($_GET[ 'ks_type'], 'OVA'); ?>>OVA</option>
+                            <option value="Special" <?php selected($_GET[ 'ks_type'], 'Special'); ?>>Special</option>
+                            <option value="Movie" <?php selected($_GET[ 'ks_type'], 'Movie'); ?>>Movie</option>
+                            <option value="ONA" <?php selected($_GET[ 'ks_type'], 'ONA'); ?>>ONA</option>
+                        </select>
+                    </div>
+                    <div class="form-group select-buka-select">
+                        <label for="status">Status:&nbsp;</label>
+                        <select class="form-control" id="status" name="ks_status">
+                            <option value="">Pilih Status</option>
+                            <option value="Finished Airing" <?php selected($_GET[ 'ks_status'], 'Finished Airing'); ?>>Completed</option>
+                            <option value="Currently Airing" <?php selected($_GET[ 'ks_status'], 'Completed Airing'); ?>>Ongoing</option>
+                        </select>
+                    </div>
+                    <div class="form-group select-buka-select">
+                        <label for="studio">Studio:&nbsp;</label>
+                        <select class="form-control" id="studio" name="studio">
+                            <option value="">Pilih Studio</option>
+                            <?php $studio=g et_terms(array( 'taxonomy'=>'studio')); foreach($studio as $d){ ?>
+                            <option value="<?php echo $d->slug; ?>" <?php selected($_GET[ 'studio'], $d->slug); ?>>
+                                <?php echo $d->name; ?></option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                    <div class="form-group select-buka-select">
+                        <label for="tahun">Tahun:&nbsp;</label>
+                        <select class="form-control" id="tahun" name="ks_tahun">
+                            <option value="">Pilih Tahun</option>
+                            <?php $tahun_paling_awal=1 950; foreach(range(date( 'Y'),$tahun_paling_awal) as $x){ ?>
+                            <option value="<?php echo $x; ?>" <?php selected($_GET[ 'ks_tahun'], $x); ?>>
+                                <?php echo $x; ?>
+                            </option>
+                            <?php } ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="buka-genre">
+                    <p>Genre:</p>
+                    <input type="hidden" name="genre">
+                    <?php $gen=e xplode( ",", $_GET[ 'genre']); ?>
+                    <?php $genres=g et_terms(array( 'taxonomy'=>'genre')); $i = 1; foreach($genres as $data){ ?>
+                    <div class="custom-control custom-checkbox joss">
+                        <input type="checkbox" class="custom-control-input" id="check<?php echo $i; ?>" value="<?php echo $data->name; ?>" <?php checked(in_array($data->name, $gen)); ?>>
+                        <label class="custom-control-label" for="check<?php echo $i; ?>">
+                            <?php echo $data->name; ?></label>
+                    </div>
+                    <?php $i++; } ?>
+                </div>
+            </div>
+        </form>
+    </div><!--/.input-wadah-->
+</div><!--/.inputnya-->
+<!-- === CODE: SAMPAI SINI === -->
    <div class="col-12 head">
        <h1>GENRE</h1>
        <hr>

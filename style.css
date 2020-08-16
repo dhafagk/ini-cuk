@@ -186,10 +186,20 @@ a:not([href]):hover{background: transparent!important}
 .anime-gambar img{width: 100%;display: block;border-radius: 10px;transition: transform .5s ease;}
 .list-anime:hover .anime-gambar img{transform: scale(1.15);}
 /*SEARCH ADVANCED*/
-.col-12.head{padding: 30px 25px 20px 25px}
-.col-12.inputnya{display: flex;justify-content: center;align-items: center;flex-direction: column; padding: 15px 0}
-.col-12.head h1{font-size: 21px;color: #3E464B;margin-bottom: 3px;font-weight: bold}
-.col-12.head hr{border: 1px solid #3E464B;margin: 0}
+.head{padding: 30px 25px 20px 25px;}
+/*.inputnya{display: flex;justify-content: center;align-items: center;flex-direction: column; padding: 15px 0}*/
+.inputnya {
+    display: block;
+    position: relative;}
+.inputnya .input-wadah{
+    position: relative;
+    float: left;
+    margin-top: 0px;
+    margin-left: 20vw;
+    margin-right: 10vw;
+}
+.head h1{font-size: 21px;color: #3E464B;margin-bottom: 3px;font-weight: bold}
+.head hr{border: 1px solid #3E464B;margin: 0}
 .form-control.advanced{border-radius: 5px 0 0 5px;width: 650px;padding: 25px 10px}
 .input-group-append{float: right;}
 .form-inline .form-group,.form-inline label{display: inline-flex!important;}

@@ -211,8 +211,9 @@ button.peradaban{padding: 13px 18px}
 .joss{float: left;padding: 0px 10px 0 5px}
 .col-12.genre-list{padding: 0 15px}
 .mama-uwu a{overflow: hidden;width: 204px; margin: 10px 15px;font-size: 14px;text-align: center;line-height: 32px;font-family: cocon}
-.mama-uwu a:nth-child(odd){background: #495057;color: #F9F8F8}
-.mama-uwu a:nth-child(even){background: #F9F8F8;color: #495057}
+.mama-uwu a:nth-child(odd){background: #495057;color: #F9F8F8;border:1px solid #F9F8F8;}
+.mama-uwu a:nth-child(even){background: #F9F8F8;color: #495057;border:1px solid #495057;}
+
 .col-12.waifu{padding: 0 5px;display: flex}
 #bungkus_waifu{width: 25%;height: 240px;margin: 0 20px 20px;flex-grow: 1}
 .bungkus-waifu{height: auto!important;}

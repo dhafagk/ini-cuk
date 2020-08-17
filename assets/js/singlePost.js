@@ -107,6 +107,8 @@ $(document).ready(function(){
         $('iframe.target[data-id='+iframeID+']').show();
 
         $('iframe.target').prop('src', "Null");
+        console.log(iframeID);
+        console.log(xrayLoad);
         $('iframe.target[data-id='+iframeID+']').prop('src', eval("episode"+iframeID)[xrayLoad]+'?autoplay=0');
         /*==== Mirror Tabs ====*/
         $("[data-mirror="+iframeID+"] .mirror").click(function(){

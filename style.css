@@ -134,7 +134,7 @@ span.box-rating{background: #F8B400;padding: 10px;color: #fff;font-size: 12px;fo
 .heading-sgl #accordion_search_bar_container{color: #6E6D6C;font-weight: bold;margin-left: auto;flex-direction: row;vertical-align: middle;display: inline-block}
 .sgl-episode{font-size: 14px;padding: 2px 10px;height: auto;margin-bottom: 10px}
 .episode{}
-#accordion > .panel{border-bottom: 1px solid rgba(62,75,70,.5); display: none}
+#accordion > .panel{border-bottom: 1px solid rgba(62,75,70,.5);}
 #accordion > .panel > .panel-heading{padding: 10px 2px;transition: 0.5s all ease;}
 #accordion > .panel > .panel-heading:hover{background: rgba(248,180,0,.2)}
 #accordion > .panel > .panel-heading .badge._bangke{background: rgba(93,104,111,.4);color: #6E6D6C;}
@@ -193,15 +193,12 @@ a:not([href]):hover{background: transparent!important}
     position: relative;}
 .inputnya .input-wadah{
     position: relative;
-    float: left;
-    margin-top: 0px;
-    margin-left: 20vw;
-    margin-right: 10vw;
 }
+form.advs{justify-content: center}
 .head h1{font-size: 21px;color: #3E464B;margin-bottom: 3px;font-weight: bold}
 .head hr{border: 1px solid #3E464B;margin: 0}
 .form-control.advanced{border-radius: 5px 0 0 5px;width: 650px;padding: 25px 10px}
-.input-group-append{float: right;}
+.class-apalagi-ini-anjing{display: flex}
 .form-inline .form-group,.form-inline label{display: inline-flex!important;}
 .btn-outline-secondary{border: 1px solid #ced4da;border-radius: 0 5px 5px 0;color: rgba(62,70,75,.8);background-color: #efefef}
 button.peradaban{padding: 13px 18px}
